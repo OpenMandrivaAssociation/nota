@@ -1,6 +1,6 @@
 Name:		nota
 Version:	1.1.1
-Release:	1
+Release:	2
 Source0:	https://invent.kde.org/maui/nota/-/archive/v%{version}/nota-v%{version}.tar.bz2
 Group:		Applications/Productivity
 Summary:	Text editor for Plasma Mobile
@@ -32,7 +32,10 @@ Text editor for Plasma Mobile
 
 %install
 %ninja_install -C build
+mkdir -p %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/
+cp src/assets/nota.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/maui-nota.svg
 
 %files
 %{_bindir}/nota
 %{_datadir}/applications/org.kde.nota.desktop
+%{_datadir}/icons/hicolor/scalable/apps/maui-nota.svg
