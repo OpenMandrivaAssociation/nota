@@ -33,8 +33,6 @@ Text editor for Plasma Mobile
 
 %install
 %ninja_install -C build
-#mkdir -p %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/
-#cp src/assets/nota.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/maui-nota.svg
 
 %files
 %{_bindir}/nota
