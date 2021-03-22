@@ -39,4 +39,4 @@ Text editor for Plasma Mobile
 %files
 %{_bindir}/nota
 %{_datadir}/applications/org.kde.nota.desktop
-%{_datadir}/icons/hicolor/scalable/apps/maui-nota.svg
+%{_datadir}/icons/hicolor/scalable/apps/nota.svg
