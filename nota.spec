@@ -1,6 +1,6 @@
 Name:		nota
-Version:	1.1.1
-Release:	2
+Version:	1.2.1
+Release:	1
 Source0:	https://invent.kde.org/maui/nota/-/archive/v%{version}/nota-v%{version}.tar.bz2
 Group:		Applications/Productivity
 Summary:	Text editor for Plasma Mobile
@@ -11,6 +11,7 @@ BuildRequires:	cmake(MauiKit)
 BuildRequires:	cmake(Qt5Qml)
 BuildRequires:	cmake(Qt5Sql)
 BuildRequires:	cmake(Qt5Svg)
+BuildRequires:  cmake(Qt5QuickControls2)
 BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(KF5Notifications)
 BuildRequires:	cmake(KF5Config)
@@ -32,10 +33,8 @@ Text editor for Plasma Mobile
 
 %install
 %ninja_install -C build
-mkdir -p %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/
-cp src/assets/nota.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/maui-nota.svg
 
 %files
 %{_bindir}/nota
 %{_datadir}/applications/org.kde.nota.desktop
-%{_datadir}/icons/hicolor/scalable/apps/maui-nota.svg
+%{_datadir}/icons/hicolor/scalable/apps/nota.svg
