@@ -1,5 +1,5 @@
 Name:		nota
-Version:	1.2.1
+Version:	2.1.0
 Release:	1
 Source0:	https://invent.kde.org/maui/nota/-/archive/v%{version}/nota-v%{version}.tar.bz2
 Group:		Applications/Productivity
@@ -8,6 +8,7 @@ License:	GPLv3
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(MauiKit)
+BuildRequires:  cmake(MauiKitFileBrowsing)
 BuildRequires:	cmake(Qt5Qml)
 BuildRequires:	cmake(Qt5Sql)
 BuildRequires:	cmake(Qt5Svg)
