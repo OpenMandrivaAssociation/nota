@@ -22,6 +22,8 @@ BuildRequires:	cmake(KF5SyntaxHighlighting)
 BuildRequires:	cmake(Qt5WebView)
 BuildRequires:	cmake(Qt5WebEngine)
 
+Requires: qml(org.mauikit.texteditor)
+
 %description
 Text editor for Plasma Mobile
 
