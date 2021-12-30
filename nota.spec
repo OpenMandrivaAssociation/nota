@@ -39,3 +39,4 @@ Text editor for Plasma Mobile
 %{_bindir}/nota
 %{_datadir}/applications/org.kde.nota.desktop
 %{_datadir}/icons/hicolor/scalable/apps/nota.svg
+%{_datadir}/metainfo/org.kde.nota.metainfo.xml
