@@ -1,7 +1,7 @@
 Name:		nota
 Version:	2.1.0
-Release:	1
-Url:      https://invent.kde.org/maui/nota/
+Release:	2
+URL:      https://invent.kde.org/maui/nota/
 Source0:	https://invent.kde.org/maui/nota/-/archive/v%{version}/nota-v%{version}.tar.bz2
 Group:		Applications/Productivity
 Summary:	Text editor for Plasma Mobile
