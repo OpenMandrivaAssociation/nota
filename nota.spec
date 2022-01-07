@@ -1,8 +1,10 @@
+%define snapshot 20220107
+
 Name:		nota
-Version:	2.1.0
-Release:	2
-URL:      https://invent.kde.org/maui/nota/
-Source0:	https://invent.kde.org/maui/nota/-/archive/v%{version}/nota-v%{version}.tar.bz2
+Version:	2.1.1
+Release:	%{?snapshot:0.%{snapshot}.}1
+URL:		https://invent.kde.org/maui/nota/
+Source0:	https://invent.kde.org/maui/nota/-/archive/%{?snapshot:master/nota-master.tar.bz2#/nota-%{snapshot}}%{!?snapshot:v%{version}/nota-v%{version}}.tar.bz2
 Group:		Applications/Productivity
 Summary:	Text editor for Plasma Mobile
 License:	GPLv3
@@ -29,7 +31,7 @@ Requires: qml(org.mauikit.texteditor)
 Text editor for Plasma Mobile
 
 %prep
-%autosetup -p1 -n %{name}-v%{version}
+%autosetup -p1 -n %{name}-%{?snapshot:master}%{!?snapshot:v%{version}}
 %cmake_kde5
 
 %build
