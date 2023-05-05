@@ -44,7 +44,9 @@ Text editor for Plasma Mobile
 %install
 %ninja_install -C build
 
-%files
+%find_lang nota
+
+%files -f nota.lang
 %{_bindir}/nota
 %{_datadir}/applications/org.kde.nota.desktop
 %{_datadir}/icons/hicolor/scalable/apps/nota.svg
