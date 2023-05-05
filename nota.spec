@@ -1,7 +1,7 @@
-%define snapshot 20220107
+#define snapshot 20220107
 
 Name:		nota
-Version:	2.1.1
+Version:	2.2.2
 Release:	%{?snapshot:0.%{snapshot}.}1
 URL:		https://invent.kde.org/maui/nota/
 Source0:	https://invent.kde.org/maui/nota/-/archive/%{?snapshot:master/nota-master.tar.bz2#/nota-%{snapshot}}%{!?snapshot:v%{version}/nota-v%{version}}.tar.bz2
@@ -12,6 +12,7 @@ BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(MauiKit)
 BuildRequires:  cmake(MauiKitFileBrowsing)
+BuildRequires:  cmake(Qt5DBus)
 BuildRequires:	cmake(Qt5Qml)
 BuildRequires:	cmake(Qt5Sql)
 BuildRequires:	cmake(Qt5Svg)
@@ -24,6 +25,7 @@ BuildRequires:	cmake(KF5Attica)
 BuildRequires:	cmake(KF5SyntaxHighlighting)
 BuildRequires:	cmake(Qt5WebView)
 BuildRequires:	cmake(Qt5WebEngine)
+BuildRequires:	cmake(Qt5Widgets)
 
 Requires: qml(org.mauikit.texteditor)
 
