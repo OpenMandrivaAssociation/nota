@@ -1,7 +1,7 @@
 #define snapshot 20220107
 
 Name:		nota
-Version:	2.2.2
+Version:	3.0.0
 Release:	%{?snapshot:0.%{snapshot}.}1
 URL:		https://invent.kde.org/maui/nota/
 Source0:	https://invent.kde.org/maui/nota/-/archive/%{?snapshot:master/nota-master.tar.bz2#/nota-%{snapshot}}%{!?snapshot:v%{version}/nota-v%{version}}.tar.bz2
