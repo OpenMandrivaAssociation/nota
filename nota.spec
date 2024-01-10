@@ -1,7 +1,7 @@
 #define snapshot 20220107
 
 Name:		nota
-Version:	3.0.0
+Version:	3.0.2
 Release:	%{?snapshot:0.%{snapshot}.}1
 URL:		https://invent.kde.org/maui/nota/
 Source0:	https://invent.kde.org/maui/nota/-/archive/%{?snapshot:master/nota-master.tar.bz2#/nota-%{snapshot}}%{!?snapshot:v%{version}/nota-v%{version}}.tar.bz2
@@ -10,8 +10,8 @@ Summary:	Text editor for Plasma Mobile
 License:	GPLv3
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
-BuildRequires:	cmake(MauiKit)
-BuildRequires:  cmake(MauiKitFileBrowsing)
+BuildRequires:	cmake(MauiKit3)
+BuildRequires:  cmake(MauiKitFileBrowsing3)
 BuildRequires:  cmake(Qt5DBus)
 BuildRequires:	cmake(Qt5Qml)
 BuildRequires:	cmake(Qt5Quick)
