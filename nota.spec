@@ -12,6 +12,7 @@ BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(MauiKit3)
 BuildRequires:  cmake(MauiKitFileBrowsing3)
+BuildRequires:  cmake(MauiKitTextEditor3)
 BuildRequires:  cmake(Qt5DBus)
 BuildRequires:	cmake(Qt5Qml)
 BuildRequires:	cmake(Qt5Quick)
