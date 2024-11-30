@@ -1,7 +1,7 @@
 #define snapshot 20220107
 
 Name:		nota
-Version:	3.0.2
+Version:	4.0.0
 Release:	%{?snapshot:0.%{snapshot}.}1
 URL:		https://invent.kde.org/maui/nota/
 Source0:	https://invent.kde.org/maui/nota/-/archive/%{?snapshot:master/nota-master.tar.bz2#/nota-%{snapshot}}%{!?snapshot:v%{version}/nota-v%{version}}.tar.bz2
@@ -10,25 +10,25 @@ Summary:	Text editor for Plasma Mobile
 License:	GPLv3
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
-BuildRequires:	cmake(MauiKit3)
-BuildRequires:  cmake(MauiKitFileBrowsing3)
-BuildRequires:  cmake(MauiKitTextEditor3)
-BuildRequires:  cmake(Qt5DBus)
-BuildRequires:	cmake(Qt5Qml)
-BuildRequires:	cmake(Qt5Quick)
-BuildRequires:	cmake(Qt5Sql)
-BuildRequires:	cmake(Qt5Svg)
-BuildRequires:  cmake(Qt5QuickControls2)
-BuildRequires:	cmake(KF5I18n)
-BuildRequires:	cmake(KF5Notifications)
-BuildRequires:	cmake(KF5Config)
-BuildRequires:	cmake(KF5CoreAddons)
-BuildRequires:	cmake(KF5KIO)
-BuildRequires:	cmake(KF5Attica)
-BuildRequires:	cmake(KF5SyntaxHighlighting)
-BuildRequires:	cmake(Qt5WebView)
-BuildRequires:	cmake(Qt5WebEngine)
-BuildRequires:	cmake(Qt5Widgets)
+BuildRequires:	cmake(MauiKit4)
+BuildRequires:  cmake(MauiKitFileBrowsing4)
+BuildRequires:  cmake(MauiKitTextEditor4)
+BuildRequires:  cmake(Qt6DBus)
+BuildRequires:	cmake(Qt6Qml)
+BuildRequires:	cmake(Qt6Quick)
+BuildRequires:	cmake(Qt6Sql)
+BuildRequires:	cmake(Qt6Svg)
+BuildRequires:  cmake(Qt6QuickControls2)
+BuildRequires:	cmake(KF6I18n)
+BuildRequires:	cmake(KF6Notifications)
+BuildRequires:	cmake(KF6Config)
+BuildRequires:	cmake(KF6CoreAddons)
+BuildRequires:	cmake(KF6KIO)
+BuildRequires:	cmake(KF6Attica)
+BuildRequires:	cmake(KF6SyntaxHighlighting)
+BuildRequires:	cmake(Qt6WebView)
+BuildRequires:	cmake(Qt6WebEngineCore)
+BuildRequires:	cmake(Qt6Widgets)
 
 Requires: qml(org.mauikit.texteditor)
 
